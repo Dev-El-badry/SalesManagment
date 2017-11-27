@@ -47,7 +47,7 @@
 		if (($p[0] == 'users') && ($p['1'] == 'login')) {
 			$controllerName = 'home';
 			$action = 'index';
-				}
+		}
 	}
 
 		$controller = '\App\Controllers\\'.ucfirst($controllerName).'Controllers';

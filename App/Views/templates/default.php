@@ -56,7 +56,7 @@
                      <li class="show-profile"> <img class="img-circle text-center" alt="" src="<?= App::$path; ?>images/users/<?php echo $_SESSION['user']->avater; ?>">
                         <p class="lead text-center"><?php echo $_SESSION['user']->fname." ".$_SESSION['user']->lname; ?></p>
                         <div class="row">
-                        <div class="col-sm-6"> <a href="<?= App::$path; ?>users/profile" class="profile-btn btn btn-default pull-left">Profile</a></div>
+                        <div class="col-sm-6"> <a href="<?= App::$path; ?>users/profile/<?= $_SESSION['ID_USER']?>" class="profile-btn btn btn-default pull-left">Profile</a></div>
                         <div class="col-sm-6"><a href="<?= App::$path; ?>users/logout" class="btn btn-danger pull-right">Logout</a></div>
 
 

@@ -41,6 +41,7 @@
 			if ($user) {
 
 				if ($user->pass == sha1($pass)) {
+					$_SESSION['ID_USER'] = $user->id;
 					$_SESSION['user'] = $user;
 					setcookie("cm-user-id", $user->id, time() + 3600, '/');
 					return true;

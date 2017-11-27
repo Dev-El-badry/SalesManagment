@@ -78,6 +78,7 @@ use Core\Upload;
 
 		public function delete() {
 			if (isset($_POST['id_art'])) {
+				
 				$res = $this->Articles->delete($_POST['id_art']);
 
 				if ($res) {

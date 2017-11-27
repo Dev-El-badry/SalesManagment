@@ -11,7 +11,7 @@ use \PDO;
 		private $db_name;
 		private $pdo;
 
-		public function __construct($db_name, $host = 'localhost', $user = 'root', $pass = '') {
+		public function __construct($db_name, $host = 'localhost', $user = 'root', $pass = 'root1234') {
 			$this->host 	= $host;
 			$this->user 	= $user;
 			$this->pass 	= $pass;

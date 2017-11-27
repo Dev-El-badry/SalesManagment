@@ -66,7 +66,7 @@ function searchArticles() {
 	};
 
 	$.post(
-		'index.php',
+		'/try/public/index.php',
 		obj,
 		function(data) {
 			$('.box-search').slideUp();
@@ -96,7 +96,7 @@ function deleteArt(btn, e) {
 		};
 
 		$.post(
-			'index.php',
+			'/try/public/index.php',
 			obj,
 			function(data) {
 
